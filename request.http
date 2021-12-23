@@ -1,0 +1,74 @@
+GET http://localhost:4000/users
+
+# Signup
+###
+POST http://localhost:4000/users
+content-type: application/json
+
+{
+    "name": "test",
+    "email": "test@gmail.com",
+    "password": "Test@123"
+}
+
+# Login
+###
+POST http://localhost:4000/login
+content-type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "Test@123"
+}
+
+# Check Authentication
+###
+GET http://localhost:4000/isAuthenticated
+content-type: application/json
+
+#Create New Item
+###
+POST http://localhost:4000/items
+Content-Type: application/json
+
+{
+    "name": "kawasaki bike",
+    "category": "bluewhale",
+    "price": 506.46
+}
+
+# Get All Items
+###
+Get http://localhost:4000/items
+Content-Type: application/json
+
+# Get Item by Id
+###
+Get http://localhost:4000/items/61c1eafdb4a76774eb366aa3
+Content-Type: application/json
+
+#Get All Items Listed by this user
+###
+Get http://localhost:4000/items/sell
+Content-Type: application/json
+
+#Get Purchased Items by this user
+###
+Get http://localhost:4000/purchases
+Content-Type: application/json
+
+
+#Purchase an Item via transaction
+###
+Post http://localhost:4000/purchases
+Content-Type: application/json
+
+{
+    "item_id": "61c31870b84358edb073cfe5"
+}
+
+
+#Logout
+###
+GET http://localhost:4000/logout
+content-type: application/json
