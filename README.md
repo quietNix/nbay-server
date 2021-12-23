@@ -13,3 +13,5 @@ run: npm run start </br>
 
 the server will be running at port 4000 </br>
 go to http://localhost:4000/ in browser, for server, & run frontend nbay-client with it.
+
+Client Repo: https://github.com/quietNix/nbay-client
