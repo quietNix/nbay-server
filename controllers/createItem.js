@@ -18,7 +18,7 @@ const getItems = async (req, res, next) => {
                 name: newItem.name,
                 category: newItem.category,
                 price: newItem.price,
-                photo: newItem.photo,
+                // photo: newItem.photo,
                 created_at: newItem.created_at
             }});
     } catch (e) {
