@@ -9,10 +9,7 @@ const getItems = async (req, res, next) => {
             name: name,
             category: category,
             price: price,
-            // img: {
-            //     data: fs.readFileSync(photo.filename),
-            //     contentType: photo.mimetype
-            // },
+            photo: photo,
             seller: await mongoose.Types.ObjectId(user_id)
         })
         res.status(201).send({
@@ -21,7 +18,7 @@ const getItems = async (req, res, next) => {
                 name: newItem.name,
                 category: newItem.category,
                 price: newItem.price,
-                // photo: newItem.photo,
+                photo: newItem.photo,
                 created_at: newItem.created_at
             }});
     } catch (e) {

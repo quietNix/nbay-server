@@ -1,4 +1,4 @@
-# Notes Taking App.
+# Nbay.
 
 
 An ebay/olx inspired website (server), utilising power of express, bcrypt, passport, express-session, & mongoose.

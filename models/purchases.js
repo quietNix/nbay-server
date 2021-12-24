@@ -14,8 +14,7 @@ const purchaseSchema = new mongoose.Schema({
         required: true
     },
     photo: {
-        data: Buffer,
-        contentType: String
+        type: String
     },
     created_at: {
         type: Date,
